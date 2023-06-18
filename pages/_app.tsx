@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className={inter.className}>
       <Head>
         <title key="title">Search news - VV17CH3R</title>
-        <meta key="description" name="description" content="VV17CH3R NextJS #2" />
+        <meta key="description" name="description" content={`Пример-приложение "Новости из США" от Родиона Нараянова | VV17CH3R PROD." `}/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
