@@ -55,8 +55,8 @@ const CategoryNewsPage = ({ newsEls }: CategoryNewsPageProps) => {
             <main>
                 <h1>{title}</h1>
                 <Alert>
-                    This is page uses <strong>getStaticProps</strong> for very high page loading speed
-                    and <strong>incremental static regeneration</strong> to show data not older than <strong>5 minutes</strong>.
+                    Приложение работает с свежими данными из США. Для динамического перевода прямых новостей используйте специальное расширение в Вашем браузере.
+					Например: QuickTranslator, uLanguage и др..
                 </Alert>
                 <NewsElGrid articles={newsEls} />
             </main>

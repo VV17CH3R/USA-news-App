@@ -5,8 +5,8 @@ const err500 = () => {
         <>
 
             <Alert variant="danger">
-                <h1>⚠ Undefinded type error ⚠</h1>
-                <p>Something goes wrong. Please contact us with this problem. <a href="https://blog.logrocket.com/adding-emojis-react-app/">VV17CH3R%Support@gmail.com </a></p>
+                <h1>⚠ Неизвестная ошибка ⚠</h1>
+                <p>Что-т опошло не так. Свяжитесь с Нами для решения данной проблемы: kravdovidova33@gamil.com или по ссылке:<a href="https://blog.logrocket.com/adding-emojis-react-app/">VV17CH3R%Support@gmail.com </a></p>
             </Alert>
         </>
      );

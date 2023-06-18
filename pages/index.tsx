@@ -20,13 +20,14 @@ export default function BreakingNewsPage({ newsElems }: BreakingNewsPageProps) {
 	return (
 		<>
 			<Head>
-				<title key="title">Breaking news - VV17CH3R</title>
+				<title key="title">Новости из США - VV17CH3R PROD.</title>
 			</Head>
 			<main>
-				<h1>Breaking news</h1>
+				<h1>Свежие новости из CША</h1>
 				<Alert>
-					This page uses <strong>getServerSideProps</strong> to fetch data server-side on every request.
-					This allows search engines to crawl the page content and <strong>improves SEO</strong>.
+					Это приложение сделано <strong>Родионом Нараяновым</strong><br />
+					Приложение работает с свежими данными из США. Для динамического перевода прямых новостей используйте специальное расширение в Вашем браузере.
+					Например: QuickTranslator, uLanguage и др..
 				</Alert>
 				<NewsElGrid articles={newsElems} />
 			</main>

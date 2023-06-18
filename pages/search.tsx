@@ -37,25 +37,25 @@ const SearchNewsPage = () => {
     return (
         <>
             <Head>
-                <title key="title">Search - VV17CH3R</title>
+                <title key="title">Поиск - VV17CH3R PROD.</title>
             </Head>
 
             <main>
-                <h1>Search News</h1>
+                <h1>Искать новости</h1>
                 <Alert>
-					This page uses <strong>getServerSideProps</strong> to fetch data server-side on every request.
-					This allows search engines to crawl the page content and <strong>improves SEO</strong>.
+                    Приложение работает с свежими данными из США. Для динамического перевода прямых новостей используйте специальное расширение в Вашем браузере. 
+                    Например: QuickTranslator, uLanguage и др.. 
 				</Alert>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3" controlId="seacrch-input">
-                        <Form.Label>Search query</Form.Label>
+                        <Form.Label>Поисковый запрос:</Form.Label>
                         <Form.Control
                             name="searchQuery"
-                            placeholder="E.g. polytics, bitcoin, sport, ..."
+                            placeholder="Например: bitkoin, sport, LadyGaGa..."
                         />
                     </Form.Group>
                     <Button type="submit" className="mb-3" disabled={serachResultsLoading}>
-                        Search
+                        Поиск
                     </Button>
                 </Form>
 
@@ -63,10 +63,10 @@ const SearchNewsPage = () => {
                 <div className="d-flex flex-column align-items-center">
                     {serachResultsLoading && <Spinner animation="border" />}
                     {serachResultsLoadingIsError &&
-                        <Alert variant="danger"> Something went wrong. Please try again. </Alert>
+                        <Alert variant="danger"> Что-то пошло не так. Попробуйте снова. </Alert>
                     }
                     {serachResults?.length === 0 &&
-                        <Alert variant="dark"> No news found. Try another query. </Alert>
+                        <Alert variant="dark"> По данному запроу ничего не найдено. </Alert>
                     }
                     {serachResults && <NewsElGrid articles={serachResults} />
                     }

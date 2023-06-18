@@ -5,8 +5,8 @@ const err404 = () => {
         <>
             <div>
                 <Alert variant="danger">
-                    <h1>Not found | 404</h1>
-                    <p>Looks like page don`t found</p>
+                    <h1>Страница не найдена | 404</h1>
+                    <p>Похоже такой страницы не существует.</p>
                 </Alert>
             </div>
         </>
